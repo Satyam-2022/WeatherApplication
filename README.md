@@ -44,3 +44,5 @@ To run the application locally, execute the following Maven command in the proje
 
 ```bash
 mvn spring-boot:run
+
+This README.md file provides clear instructions on how to install, run, and use the application. It also includes information about obtaining the API key and the license for the project. 

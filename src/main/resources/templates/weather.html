@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+<div class="bg-cover bg-center h-screen" style="background-image: url('https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148639325.jpg?w=826&t=st=1712561841~exp=1712562441~hmac=5d551d562bc9092883cd05953a4511d658bec1ea2daf32e15b0e26b889a15355');">
+    <div class="flex justify-center items-center h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg bg-opacity-80 backdrop-filter backdrop-blur-md">
+            <h2 class="text-3xl font-semibold mb-4 text-gray-800">Today's Weather Report</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p class="text-lg font-semibold text-gray-700">Weather: <span th:text="${weather.weather}" class="text-blue-600"></span></p>
+                    <p class="text-lg font-semibold text-gray-700">Details: <span th:text="${weather.details}" class="text-blue-600"></span></p>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold text-gray-700">Temperature: <span th:text="${weather.temp}" class="text-red-600"></span>&deg;C</p>
+                    <p class="text-lg font-semibold text-gray-700">Min Temperature: <span th:text="${weather.tempMin}" class="text-red-600"></span>&deg;C</p>
+                    <p class="text-lg font-semibold text-gray-700">Max Temperature: <span th:text="${weather.tempMax}" class="text-red-600"></span>&deg;C</p>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold text-gray-700">Pressure: <span th:text="${weather.pressure}" class="text-green-600"></span> hPa</p>
+                    <p class="text-lg font-semibold text-gray-700">Humidity: <span th:text="${weather.humidity}" class="text-green-600"></span>%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

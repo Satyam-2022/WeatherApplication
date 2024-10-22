@@ -15,7 +15,7 @@
         <div th:if="${error}" class="text-red-500 mb-4">
             <p th:text="${error}"></p>
         </div>
-        <form action="/weather" method="post" class="text-center">
+        <form action="/weather-app-0.0.1-SNAPSHOT/weather" method="post" class="text-center">
             <input type="text" name="city" placeholder="Enter city name" class="w-64 px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:border-blue-500">
             <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Get Weather</button>
         </form>

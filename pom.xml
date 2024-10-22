@@ -12,7 +12,7 @@
 	<artifactId>weather-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	<packaging>war</packaging>
+	
 	
 	<name>weather-app</name>
 	<description>Give a city name return the weather for that location</description>
